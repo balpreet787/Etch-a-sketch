@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/EASjs.js" defer></script>
+
     <title>Etch-a-sketch</title>
 </head>
 <body>
     <div class="grid"></div>
-    <div class="options"></div>
-        <input type="color" id="head" name="head"
-            value="#fffff">
-        <label for="pen">Pen color</label>
-        <button type="button">Eraser</button>
-        <input type="range" min="1" max="10" value="5" class="slider" id="sketchDensity">
-        <button type="button">Clear Screen</button>
+    <div class="options">
+        <input type="color" id="pen" name="pen"
+            value="#000000">
+        <button type="button" class="eraser">Eraser</button>
+        <input type="range" min="10" max="100" value="50" class="slider" id="slider">
+        <button type="button" class="clearScreen">Clear Screen</button>
     </div>
 </body>
 </html>
